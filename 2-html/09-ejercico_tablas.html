@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio tabla</title>
+</head>
+<body>
+	<h1>Tabla</h1>
+	<table border="1" width="250px">
+		<tr>
+			<td>x</td>
+			<td colspan="3"></td>
+			<td rowspan="4"></td>
+			<td rowspan="5"></td>
+		</tr>
+		<tr>
+			<td>x</td>
+			<td>x</td>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<td>x</td>
+			<td>x</td>
+			<td>x</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>x</td>
+			<td>x</td>
+			<td>x</td>
+			<td>x</td>
+		</tr>
+		<tr>
+			<td>x</td>
+			<td>x</td>
+			<td>x</td>
+			<td>x</td>
+			<td>x</td>
+		</tr>
+		<tr>
+			<td>x</td>
+			<td>x</td>
+			<td>x</td>
+			<td>x</td>
+			<td>x</td>
+			<td>x</td>
+		</tr>
+		
+
+
+
+
+
+	</table>
+
+
+
+
+	
+</body>
+</html>
+(table[border=1][width=250px]>(tr>td{x}+td[colspan=3]+td[rowspan=4]+td[rowspan=5])+(tr>td{x}+td{x}+td[colspan=2])+(tr>td{x}+td{x}+td{x}+td)+(tr>td{x}+td{x}+td{x}+td{x})+(tr>td{x}*5)+(tr>td{x}*6))		
+
+
+																					
