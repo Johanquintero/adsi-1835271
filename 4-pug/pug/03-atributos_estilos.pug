@@ -1,0 +1,17 @@
+doctype
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		title Atributos (Estilo)
+	body
+		h1(style={
+		background:'crimson',
+		color:'white',
+		padding:'20px'}) Atributos (Estilo)
+
+	label(for='enclase')
+		span Usted esta en clase?
+		input( type="checkbox" checked=true id="enclase" )	 
+
+	a(class=colores)Colombia
+	- var colores = ['yellow','blue','red']
