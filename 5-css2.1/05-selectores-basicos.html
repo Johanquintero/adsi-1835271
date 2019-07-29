@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Selectores Basicos</title>
+	<style>
+		/*selector universal(todo)*/
+		* {
+			border: 1px dashed silver;
+		}
+		/*Selector tipo etiqueta*/
+
+		body h1{
+			color: green;
+		}
+		/*Selector Descendente*/
+		body ul li {
+			background-color: darkcyan;
+			margin: 4px
+		}
+		/*Selector clase*/
+		.amarillo {
+			background-color: yellow;
+		}
+		/*Selector de identificacion*/
+		#azul{
+			background-color: blue;
+			color: white;
+		}
+		/*Selector combinado*/
+		ul.colores li.rojo{
+			background-color: red;
+			color: white;
+		}
+
+
+	</style>
+</head>
+<body>
+	<h1>Selectores Basicos</h1>
+	<ul class="colores">
+		<li class="amarillo">Amarillo</li>
+		<li id="azul">Azul</li>
+		<li class="rojo">Rojo</li>
+	</ul>
+
+</body>
+</html>
