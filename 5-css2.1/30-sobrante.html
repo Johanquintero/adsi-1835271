@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contenido Sobrante (overFlow)</title>
+	<style>
+
+
+		section.overflow {
+			margin:10px auto;
+			width: 500px;
+		}
+
+		section.overflow div{
+			border: 1px solid #999;
+			display: inline-block;
+			height: 250px;
+			padding: 10px;
+			vertical-align: top;
+			width: 140px;
+		}
+		section.overflow div h3{
+			background-color: #ccc;
+			padding: 10px;s
+			margin: 0px;
+
+		}
+		section.overflow div.box1{overflow: visible;}
+		section.overflow div.box2{overflow: hidden;}
+		section.overflow div.box3{overflow: scroll;}
+
+
+
+	</style>
+</head>
+<body>
+	<main>
+		<h1>Contenido Sobrante (overFlow)</h1>
+		<section class="overflow">
+			<div class="box1">
+				<h3>overflow:visible</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut esse sunt assumenda ullam quis culpa iste tempore ea ut optio eum, est fuga? Tempora commodi, illum illo dignissimos magnam atque hic pariatur excepturi deserunt nostrum, quia asperiores voluptatem labore non libero minima similique placeat accusantium eveniet est ab saepe. Animi.</p>
+			</div>
+			<div class="box2">
+				<h3>overflow:hidden</h3>
+				<p>Doloremque culpa deleniti sequi iste, quod explicabo beatae adipisci. Quo mollitia ut nobis odio, impedit velit recusandae! Aut non ipsa fuga cumque earum aspernatur suscipit libero facilis, deleniti accusamus, minus laborum voluptatibus enim nulla quo adipisci ex sapiente eaque, asperiores alias aliquam atque doloribus. Repellat dolores reprehenderit eveniet repudiandae delectus.</p>
+			</div>
+			<div class="box3">
+				<h3>overflow:scroll</h3>
+				<p>Odio repellendus quas doloribus earum accusamus, rem autem asperiores voluptas consectetur vel iusto iste, nesciunt eius eum laboriosam exercitationem harum tempore quam magni, dolores debitis. Dolorem voluptatem amet quis? Voluptatibus eligendi tenetur, enim, eum quia, ratione nam id odio ad porro quo sapiente debitis fuga, nesciunt cupiditate quos consectetur quas.</p>
+			</div>
+			
+		</section>
+		
+
+
+
+	</main>
+	
+</body>
+</html>
