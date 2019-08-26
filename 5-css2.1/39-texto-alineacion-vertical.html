@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Texto (Alineacion Vertical)</title>
+	<style>
+		section.verticalalign {
+			margin: 10px auto;
+			width: 480px;
+		}
+		section.verticalalign div{
+			border: 1px solid #aaa;
+			display: inline-block;
+			padding: 10px;
+			width: 130px;
+
+		}
+		section.verticalalign div.va1 {vertical-align: baseline;}
+		section.verticalalign div.va2 {vertical-align: top;}
+		section.verticalalign div.va3 {vertical-align: center;}
+		
+	</style>
+</head>
+<body>
+	<main>
+	<h1>Texto (Alineacion Vertical)</h1>
+	<section class="verticalalign">
+		<div class="va1"><img src="imgs/help.png" width="80px">Ayuda</img></div>
+		<div class="va2"><img src="imgs/help.png" width="80px">Ayuda</img></div>
+		<div class="va3"><img src="imgs/help.png" width="80px">Ayuda</img></div>
+	</section>
+		
+	</main>
+	
+</body>
+</html>
