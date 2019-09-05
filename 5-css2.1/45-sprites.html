@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sprites (Imagenes)</title>
+	<style>
+		section#sprite{
+			/*border: 1px solid red;*/
+			background: url(imgs/sprite.png) no-repeat;
+			height: 70px;
+			margin: 40px auto;
+			width: 45px;
+		}
+
+		section#sprite.sp1{background-position: 0px 0px;}
+		section#sprite.sp2{background-position: -50px 0px;}
+		section#sprite.sp3{background-position: -97px 0px;}
+
+		section#sprite.sp4{background-position: 0px -67px;}
+		section#sprite.sp5{background-position: -50px -67px;}
+		section#sprite.sp6{background-position: -97px -67px;}
+
+		section#sprite.sp7{background-position: 0px -130px;}
+		section#sprite.sp8{background-position: -50px -130px;}
+		section#sprite.sp9{background-position: -97px -130px;}
+
+		section#sprite.sp10{background-position: 0px -195px;}
+		section#sprite.sp11{background-position: -50px -195px;}
+		section#sprite.sp12{background-position: -97px -195px;}
+
+
+
+
+	</style>
+</head>
+<body>
+	<main>
+		<h1>Sprites (Imagenes)</h1>
+		<section id="sprite"></section>
+	</main>
+
+	<script>
+		var sp = document.getElementById('sprite');
+		var ct = 1;
+		var si =setInterval(function(){
+			if(ct == 13){
+				sp.className = '';
+				ct = 1;
+
+			}else{
+				sp.classList.add('sp'+ct);
+
+			}
+          ct++;
+		},300);
+	</script>
+	
+</body>
+</html>
