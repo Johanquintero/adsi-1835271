@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fondos (degradados)</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        div.box {
+            border: 2px solid #1d4e6f;
+            height: 250px;
+            margin: 20px auto;
+            width: 400px;
+
+        }
+
+        div.box1 {
+            background: linear-gradient(to top,green,blue);
+        }
+        div.box2 {
+            background: linear-gradient(45deg,#75da75,#64bde0);
+        }
+        div.box3 {
+            background: linear-gradient(to bottom,#ff0 40%,#00f 0%,#00f 70%  ,#f00 0%);
+        }
+        div.box4 {
+            background: linear-gradient(to right,#da4cdf 50%,#642261 0%);
+            background-size: 40px 100%;
+            background-position: center;
+        }
+
+        div.box5 {
+            background: radial-gradient(circle,#549954,#bbbb58);
+        }
+
+        div.box6 {
+            background: radial-gradient(circle,#fff 20%,#000 20%,
+                                              #000 40%,#fff 40%,
+                                              #fff 60%,#000 60%,
+                                              #000 80%,#fff 80%);
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Fondos degradados</h1>
+        </header>
+        <section>
+            <h3>linea-gradient(to top,green,blue)</h3>
+            <div class="box box1"></div>
+
+            <h3>linear-gradient(45deg,#75da75,#64bde0)</h3>
+            <div class="box box2"></div>
+
+            <h3>linea-gradient(to bottom,#ff0 40%,#00f 0%,#00f 70%  ,#f00 0%)</h3>
+            <div class="box box3"></div>
+
+            <h3>linea-gradient(to right,#da4cdf 50%,#642261 0%)</h3>
+            <div class="box box4"></div>
+
+            <h3>linea-gradient()</h3>
+            <div class="box box5"></div>
+
+            <h3>linea-gradient()</h3>
+            <div class="box box6"></div>           
+
+        </section>
+    </main>
+    
+</body>
+</html>
