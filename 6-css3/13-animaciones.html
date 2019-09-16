@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animaciones</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+
+    section {
+        background: url(imgs/garden.jpg) no-repeat center;
+        background-size: cover;
+        height: 480px;
+        margin: 20px auto;
+        position: relative;
+        width: 800px;
+    }
+
+    div.rabbit {
+        background: url(imgs/spider.gif) no-repeat center;
+        height: 100px;
+        position: absolute;
+        background-size: cover;
+        width: 120px;
+        animation: animRabbit 5s ease-in infinite;
+
+    }
+    div.picachu {
+        background: url(imgs/Pokemon.gif) no-repeat center;
+        height: 100px;
+        position: absolute;
+        background-size: cover;
+        width: 120px;
+        animation: animpicachu 5s ease-in infinite;
+
+    }
+
+    @keyframes animpicachu {
+        0% {
+            left: 0px;
+            top:300px;
+            transform: rotateY(180deg)
+
+        }
+
+        100% {
+            left: 600px;
+            top:300px;
+            transform: rotateY(0deg)
+
+        }
+
+    }
+
+   
+    
+
+    @keyframes animRabbit {
+        0% {
+            left: 0px;
+            top:120px;
+            transform: rotateY(0deg)
+
+        }
+
+        20% {
+            left: 100px;
+            top: 400px;
+                transform: rotateY(0deg)
+        }
+        
+        40% {
+            left: 200px;
+            top: 120px;
+                transform: rotateY(0deg)
+        }
+        
+        45% {
+            left: 300px;
+            top: 400px;
+                transform: rotateY(0deg)
+        }
+
+        51% {
+            left: 400px;
+            top: 120px;
+            transform: rotateY(0deg);
+        }
+
+        60% {
+            left: 500px;
+            top: 120px;
+            transform: rotateY(0deg);
+        }
+
+        100% {
+            left:600px;
+            top:400px;
+            transform: rotateY(180deg);
+        }
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Animaciones</h1>
+        </header>
+        <section>
+            <div class="rabbit"></div>
+            <div class="picachu"></div>
+
+        </section>
+    </main>
+    
+</body>
+</html>
