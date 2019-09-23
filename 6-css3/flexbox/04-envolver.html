@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envolver Flex Box</title>
+    <style>
+        body {
+            font:16px Arial;
+            color:  #666;
+        }
+
+        ul.fruits {
+            background-color : #de908e;
+            border-radius: 4px;
+            display:flex;
+            height: 220px;
+            list-style: none;
+            padding: 0px;
+            margin: 0px 10px;
+        
+
+        }
+
+        ul.fruits li {
+            background-color: #c9e1d3;
+            border-radius: 4px;
+            margin: 4px;
+        }
+
+        ul.fruits.fruits1 {
+            flex-wrap: nowrap;
+
+
+        }
+
+        ul.fruits.fruits2 {
+            flex-wrap: wrap;
+        }
+
+        ul.fruits.fruits3 {
+            flex-wrap: wrap-reverse;
+            margin-top: 400px;
+        }
+    
+    </style>
+    
+</head>
+<body>
+    <h1>flex-wrap: nowrap;</h1>
+    <ul class="fruits fruits1">
+        <li><img src="imgs/pear.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        <li><img src="imgs/grapes.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        
+    </ul>
+
+    <br>
+    <br>
+
+    <h1> flex-wrap: wrap;</h1>
+    <ul class="fruits fruits2">
+        <li><img src="imgs/pear.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        <li><img src="imgs/grapes.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        
+    </ul>
+    <br>
+    <br>
+
+    <h1> flex-wrap: wrap-reverse;</h1>
+    <ul class="fruits fruits3">
+            <li><img src="imgs/pear.svg" alt=""></li>
+            <li><img src="imgs/orange.svg" alt=""></li>
+            <li><img src="imgs/grapes.svg" alt=""></li>
+            <li><img src="imgs/orange.svg" alt=""></li>
+            
+        </ul>
+
+    </ul>
+    
+</body>
+</html>

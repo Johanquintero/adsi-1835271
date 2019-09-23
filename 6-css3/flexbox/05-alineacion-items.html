@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alineacion items </title>
+    <style>
+        body {
+            font:16px Arial;
+            color:  #666;
+        }
+
+        ul.fruits {
+            background-color : #de908e;
+            border-radius: 4px;
+            display:flex;
+            height: 420px;
+            list-style: none;
+            padding: 0px;
+            margin: 0px 10px;
+        
+
+        }
+
+        ul.fruits li {
+            background-color: #c9e1d3;
+            border-radius: 4px;
+            margin: 4px;
+        }
+
+        ul.fruits.fruits1 {
+            align-items: stretch;
+
+
+        }
+
+        ul.fruits.fruits2 {
+            align-items: flex-start;
+        }
+
+        ul.fruits.fruits3 {
+            align-items: flex-end;
+        }
+
+
+        ul.fruits.fruits4 {
+            align-items: center;
+           
+        }
+        
+
+        ul.fruits.fruits5 {
+            align-items: baseline;
+           
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>align-items: stretch</h1>
+    <ul class="fruits fruits1">
+        <li><img src="imgs/pear.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        <li><img src="imgs/grapes.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        
+    </ul>
+
+    <h1>align-items: flex-start</h1>
+    <ul class="fruits fruits2">
+        <li><img src="imgs/pear.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        <li><img src="imgs/grapes.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        
+    </ul>
+
+    <h1>align-items: flex-end</h1>
+    <ul class="fruits fruits3">
+            <li><img src="imgs/pear.svg" alt=""></li>
+            <li><img src="imgs/orange.svg" alt=""></li>
+            <li><img src="imgs/grapes.svg" alt=""></li>
+            <li><img src="imgs/orange.svg" alt=""></li>
+            
+        </ul>
+
+
+        <h1>align-items: center</h1>
+    <ul class="fruits fruits4">
+            <li><img src="imgs/pear.svg" alt=""></li>
+            <li><img src="imgs/orange.svg" alt=""></li>
+            <li><img src="imgs/grapes.svg" alt=""></li>
+            <li><img src="imgs/orange.svg" alt=""></li>
+            
+        </ul>
+
+
+        <h1>align-items: baseline</h1>
+        <ul class="fruits fruits5">
+                <li><img src="imgs/pear.svg" alt=""></li>
+                <li><img src="imgs/orange.svg" alt=""></li>
+                <li><img src="imgs/grapes.svg" alt=""></li>
+                <li><img src="imgs/orange.svg" alt=""></li>
+                
+            </ul>
+
+
+        
+            
+</body>
+
+</html>

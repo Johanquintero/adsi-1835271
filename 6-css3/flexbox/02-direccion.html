@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Direccion Flex Box</title>
+    <style>
+        body {
+            font:16px Arial;
+            color:  #666;
+        }
+
+        ul.fruits {
+            background-color : #de908e;
+            border-radius: 4px;
+            display:flex;
+            height: 220px;
+            list-style: none;
+            padding: 0px;
+            margin: 0px 10px;
+        
+
+        }
+
+        ul.fruits li {
+            background-color: #c9e1d3;
+            border-radius: 4px;
+            margin: 4px;
+        }
+
+        ul.fruits.fruits1 {
+            flex-direction: row;
+
+
+        }
+
+        ul.fruits.fruits2 {
+            flex-direction: column;
+
+
+        }
+
+        ul.fruits.fruits3 {
+            flex-direction: row-reverse;
+            margin-top: 600px;
+
+
+
+        }
+        ul.fruits.fruits4 {
+            flex-direction: column-reverse;
+            margin-top: 1200px;
+
+
+
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <h1>Direccion rows</h1>
+    <ul class="fruits fruits1">
+        <li><img src="imgs/pear.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        <li><img src="imgs/grapes.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        
+    </ul>
+
+    <h1>Direccion columns</h1>
+    <ul class="fruits fruits2">
+        <li><img src="imgs/pear.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        <li><img src="imgs/grapes.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        
+    </ul>
+
+    <h1>rows reverse</h1>
+    <ul class="fruits fruits3">
+            <li><img src="imgs/pear.svg" alt=""></li>
+            <li><img src="imgs/orange.svg" alt=""></li>
+            <li><img src="imgs/grapes.svg" alt=""></li>
+            <li><img src="imgs/orange.svg" alt=""></li>
+            
+        </ul>
+
+
+        <h1>columns reverse</h1>
+    <ul class="fruits fruits4">
+            <li><img src="imgs/pear.svg" alt=""></li>
+            <li><img src="imgs/orange.svg" alt=""></li>
+            <li><img src="imgs/grapes.svg" alt=""></li>
+            <li><img src="imgs/orange.svg" alt=""></li>
+            
+        </ul>
+    
+</body>
+</html>

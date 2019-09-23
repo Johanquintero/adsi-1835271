@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Justificado Flex Box</title>
+    <style>
+        body {
+            font:16px Arial;
+            color:  #666;
+        }
+
+        ul.fruits {
+            background-color : #de908e;
+            border-radius: 4px;
+            display:flex;
+            height: 220px;
+            list-style: none;
+            padding: 0px;
+            margin: 0px 10px;
+        
+
+        }
+
+        ul.fruits li {
+            background-color: #c9e1d3;
+            border-radius: 4px;
+            margin: 4px;
+        }
+
+        ul.fruits.fruits1 {
+            justify-content: flex-start;
+
+
+        }
+
+        ul.fruits.fruits2 {
+            justify-content: flex-end;
+            
+
+
+        }
+
+        ul.fruits.fruits3 {
+            justify-content: center;
+            
+
+
+
+        }
+        ul.fruits.fruits4 {
+            justify-content: space-between;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <h1>justify-content: flex-start;</h1>
+    <ul class="fruits fruits1">
+        <li><img src="imgs/pear.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        <li><img src="imgs/grapes.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        
+    </ul>
+
+    <h1>justify-content: flex-end;</h1>
+    <ul class="fruits fruits2">
+        <li><img src="imgs/pear.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        <li><img src="imgs/grapes.svg" alt=""></li>
+        <li><img src="imgs/orange.svg" alt=""></li>
+        
+    </ul>
+
+    <h1>justify-content: center</h1>
+    <ul class="fruits fruits3">
+            <li><img src="imgs/pear.svg" alt=""></li>
+            <li><img src="imgs/orange.svg" alt=""></li>
+            <li><img src="imgs/grapes.svg" alt=""></li>
+            <li><img src="imgs/orange.svg" alt=""></li>
+            
+        </ul>
+
+
+        <h1>justify-content: space-between</h1>
+    <ul class="fruits fruits4">
+            <li><img src="imgs/pear.svg" alt=""></li>
+            <li><img src="imgs/orange.svg" alt=""></li>
+            <li><img src="imgs/grapes.svg" alt=""></li>
+            <li><img src="imgs/orange.svg" alt=""></li>
+            
+        </ul>
+    
+</body>
+</html>

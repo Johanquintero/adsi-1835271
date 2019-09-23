@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animacion</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style> 
+
+    main {
+
+        width: 1024px !important;
+    }
+
+
+    main section div.parallax {
+        width: 1024px;
+        height: 576px;
+        position: relative;
+    }
+
+    main section div.parallax div.layer{
+        position: absolute;
+        height: 576px;
+        width: 1024px;
+
+    }
+
+    main section div.parallax div.layer8{
+        background: url(imgs/layer_08.png) repeat-x center;
+     
+    }
+    main section div.parallax div.layer7{
+        background: url(imgs/layer_07.png) repeat-x center;
+        animation: animlayer 70s linear infinite;  
+    }
+    main section div.parallax div.layer6{
+        background: url(imgs/layer_06.png) repeat-x center;
+        animation: animlayer 60s linear infinite;
+       
+    }
+    main section div.parallax div.layer5{
+        background: url(imgs/layer_05.png) repeat-x center;
+        animation: animlayer 50s linear infinite;
+    }
+    main section div.parallax div.layer4{
+        background: url(imgs/layer_04.png) repeat-x center;
+        animation: animlayer 40s linear infinite;
+
+      
+    }
+    main section div.parallax div.layer3{
+        background: url(imgs/layer_03.png) repeat-x center;
+        animation: animlayer 30s linear infinite;
+
+     
+    }
+    main section div.parallax div.layer2{
+        background: url(imgs/layer_02.png) repeat-x center;
+        animation: animlayer 20s linear infinite;
+
+       
+    }
+    main section div.parallax div.layer1{
+        background: url(imgs/layer_01.png) repeat-x center;
+        animation: animlayer 10s linear infinite;
+
+        
+    }
+
+    main section div.parallax div.layer0{
+        background :url(imgs/picachug2.gif) no-repeat center;
+        animation: animpica 10s linear infinite;
+        background-size: contain;
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        margin-top: 375px;
+        transition: 0.5s ease-in;
+
+        
+
+        
+    }
+
+    main section div.parallax div.layer05 {
+        background :url(imgs/goku.gif) no-repeat center;
+        animation: animgoku 10s linear infinite;
+        background-size: contain;
+        position: absolute;
+        height: 200px;
+        width: 150px;
+        margin-top: 375px;
+        transition: 0.5s ease-in;
+    }
+
+    div.layer0:hover {
+        transform: translateY(-100px);
+
+    }
+
+    
+
+
+
+
+
+    @keyframes animlayer{
+        100% {
+            background-position: -2048px;
+        }
+    }
+
+    @keyframes animpica{
+        0% {
+            left: 0px;
+            top: 0px;
+        }
+
+        50% {
+            left: 900px;
+            top: 0px;
+        }
+        75% {
+            left: 900px;
+            top: 0px;
+            transform: rotateY(0deg)
+
+        }
+        100% {
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+
+    @keyframes animgoku{
+        0% {
+            left: 100px;
+            top: 0px;
+        }
+
+        50% {
+            left: 900px;
+            top: 0px;
+        }
+        75% {
+            left: 900px;
+            top: 0px;
+            transform: rotateY(0deg)
+
+        }
+        100% {
+            left: 100px;
+            top: 0px;
+        }
+    }
+
+  
+    
+    
+    
+    </style>
+</head>
+<body>
+    <main>
+
+        <header>
+            <h1>Animacion (steps)</h1>
+        </header>
+
+        <section>
+                <div class="parallax">
+                    <div class="layer layer8"></div>
+                    <div class="layer layer7"></div>
+                    <div class="layer layer6"></div>
+                    <div class="layer layer5"></div>
+                    <div class="layer layer4"></div>
+                    <div class="layer layer3"></div>
+                    <div class="layer layer2"></div>
+                    <div class="layer layer1"></div>
+                    <div class="layer0"></div>
+                    <div class="layer05"></div>
+                </div>
+            </section>
+    </main>
+    
+    
+</body>
+</html>
