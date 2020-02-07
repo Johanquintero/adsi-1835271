@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Como escribir javascript</title>
+    <link rel="stylesheet" href="css/master.css">
+   
+</head>
+<body>
+    <main> 
+        <header>
+            <h1> ¿ Como escribir en Js ?</h1>
+
+        </header> 
+        <section>
+            <script>
+                document.write("ADSI");
+            </script>
+            <h2 id="msj"></h2>
+
+
+
+        </section>
+    </main>
+    <script>
+        var msj = document.getElementById('msj');
+        msj.innerHTML = "Mensaje desde js";
+        setInterval(function() {
+            console.log('ja')
+        } ,1000 );
+    
+    
+    </script>
+</body>
+</html>

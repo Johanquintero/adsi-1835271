@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variables JS</title>
+    <link rel="stylesheet" href="css/master.css">
+   
+</head>
+<body>
+    <main> 
+        <header>
+            <h1>Variables JS </h1>
+
+        </header> 
+        <section>
+            <ol>
+                <li class="number">23</li>
+                <li class="number">8</li>
+                <li class="number">25</li>
+                <li class="number">3</li>
+            </ol>
+            <h4 id="suma"></h4>
+
+            <ul>
+                <li>Hola</li>
+                <li>Mundo</li>
+            </ul>
+            <h4 id="msj"></h4>
+
+
+        </section>
+    </main>
+    <script>
+        var nums = document.getElementsByClassName('number');
+        var suma = document.getElementById('suma');
+        var res = 0;
+        var str = '';
+        for (var i = 0; i < nums.length; i++){
+            res += parseInt(nums[i].textContent);
+        }
+        suma.innerHTML = "La suma es :"+res; 
+
+        //var strings = document.getElementsByTagName('li');
+        //msj.innerHTML = strings[4].textContent + " " + strings[5].textContent;
+
+        var strings = document.querySelectorAll('ul li');
+        for(var i = 0; i< strings.length; i++){
+            str += strings[i].textContent;
+        }
+        msj.innerHTML = "La cadena resultado es: "+str;
+
+
+
+        
+
+
+
+       
+
+
+    
+    
+    </script>
+</body>
+</html>
