@@ -1,0 +1,142 @@
+main.base {
+    background: transparent url(../imgs/car/Base.png) no-repeat center;
+    height: 431px;
+    margin: 20px auto;
+    width: 300px;
+}
+
+main.base section.attributes ul {
+    list-style: none;
+    padding: 51px 0px 0px 110px ;
+    padding-left: 120px;
+}
+main.base section.attributes ul li {
+    color: #000;
+    font: 16px Arial;
+    padding: 0.8px;
+    margin-bottom: 18px;
+}
+
+main.base section.methods button {
+    border:none;
+    height: 60px;
+    margin: 90px 4px;
+    width: 48px;
+    cursor: pointer;
+}
+
+main.base section.methods button:hover {
+    transform: scale(1.1);
+}
+
+main.base section.methods button#btn-on {
+    background: transparent url(../imgs/car/Iniciar.png) no-repeat center;
+}
+main.base section.methods button#btn-off {
+    background: transparent url(../imgs/car/Apagar.png) no-repeat center;
+}
+main.base section.methods button#btn-forw {
+    background: transparent url(../imgs/car/Adelante.png) no-repeat center;
+}
+main.base section.methods button#btn-back {
+    background: transparent url(../imgs/car/Atras.png) no-repeat center;
+}
+main.base section.methods button#btn-stop {
+    background: transparent url(../imgs/car/Detener.png) no-repeat center;
+}
+
+
+
+
+main.base section.methods button#btn-on:hover,
+main.base section.methods button#btn-on.active {
+    background: transparent url(../imgs/car/Iniciar-off.png) no-repeat center;
+}
+main.base section.methods button#btn-off:hover,
+main.base section.methods button#btn-off.active {
+    background: transparent url(../imgs/car/Apagar-off.png) no-repeat center;
+}
+main.base section.methods button#btn-forw:hover,
+main.base section.methods button#btn-forw.active  {
+    background: transparent url(../imgs/car/Adelante-off.png) no-repeat center;
+}
+main.base section.methods button#btn-back:hover,
+main.base section.methods button#btn-back.active {
+    background: transparent url(../imgs/car/Atras-off.png) no-repeat center;
+}
+main.base section.methods button#btn-stop:hover,
+main.base section.methods button#btn-stop.active {
+    background: transparent url(../imgs/car/Detener-off.png) no-repeat center;
+}
+
+main.base section#path {
+    position: absolute;
+    left: 0px;
+    height: 200px;
+    width: 300px;
+}
+
+main.base section#path div#vehicle {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 300px;
+    height: 200px;
+    /* position: absolute;
+    left: 0px; */
+}
+
+
+/*******************************/
+/*on*/
+main.base section#path div#vehicle.on {
+
+    animation: 0.4ms animOn infinite;
+
+}
+
+@keyframes animOn {
+        
+    0%,100%{ transform: translateY(0px); }
+
+    50%{ transform: translateY(-2px); }
+    
+}
+
+
+/*******************************/
+/*forward*/
+main.base section#path.forward {
+
+    animation: 4s animForward linear infinite;
+
+}
+
+@keyframes animForward {
+        
+    0%  { transform: translateX(0px); }
+
+    100%{ transform: translatex(1400px); }
+    
+}
+
+
+/*******************************/
+/*bacwar*/
+
+main.base section#path.backward {
+    animation-direction: reverse;
+    
+
+}
+
+/*******************************/
+/*stop*/
+
+main.base section#path.stop {
+    animation-play-state: paused;
+    
+
+}
+

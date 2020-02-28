@@ -1,0 +1,153 @@
+section div.calc {
+    background: url(../imgs/cal/base.png)no-repeat center;
+    height: 530px;
+    margin: 20px auto;
+    position: relative;
+    width: 320px;
+}
+
+section div.calc.dark {
+    background: url(../imgs/cal/basedark.png)no-repeat center;
+  
+}
+
+section div.calc button#theme {
+    background: transparent url(../imgs/cal/btncolor.png)no-repeat center;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    width: 32px;
+    height: 15px;
+    top: 60px; left:24px ;
+}
+
+section div.calc.dark button#theme {
+    background: transparent url(../imgs/cal/btncolor-dark.png) no-repeat center;
+}
+
+section div.calc output#displayMath {
+    color: rgb(8, 77, 77);
+    text-align: right;
+    position: absolute;
+    top: 90px; right: 25px;
+}
+
+section div.calc output#displayAnswer {
+    color: rgb(8, 77, 77);
+    font-size: 2em;
+    text-align: right;
+    position: absolute;
+    top: 125px; right: 25px;
+
+}
+
+section div.calc ul.buttons {
+    padding: 0px;
+    list-style: none;
+    position: absolute;
+    top: 170px; left: 22px;
+    width: 292px;
+}
+
+section div.calc ul.buttons li{
+    background: transparent no-repeat center;
+    cursor: pointer;
+    display: inline-block;
+    height: 47px;
+    margin: 0px 8px 4px 0px;
+    width: 60px;
+    transition:  all 0.5S;
+}
+
+section div.calc ul.buttons li#btnl {
+    background: transparent url(../imgs/cal/btn\(.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btnr {
+    background: transparent url(../imgs/cal/btnR.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btnRaiz {
+    background: transparent url(../imgs/cal/btnRaiz.png)no-repeat center;
+}
+section div.calc ul.buttons li#btnX2 {
+    background: transparent url(../imgs/cal/btnX2.png)no-repeat center;
+}
+section div.calc ul.buttons li#btnC {
+    background: transparent url(../imgs/cal/btnC.png)no-repeat center;
+}
+section div.calc ul.buttons li#btnDelete {
+    background: transparent url(../imgs/cal/btnDelete.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btnAns {
+    background: transparent url(../imgs/cal/btnAns.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btnDiv {
+    background: transparent url(../imgs/cal/btn-.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btn7 {
+    background: transparent url(../imgs/cal/btn7.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btn8 {
+    background: transparent url(../imgs/cal/btn8.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btn9 {
+    background: transparent url(../imgs/cal/btn9.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btnx {
+    background: transparent url(../imgs/cal/btnx.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btn4 {
+    background: transparent url(../imgs/cal/btn4.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btn5 {
+    background: transparent url(../imgs/cal/btn5.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btn6 {
+    background: transparent url(../imgs/cal/btn6.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btnRes {
+    background: transparent url(../imgs/cal/btn--.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btn1 {
+    background: transparent url(../imgs/cal/btn1.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btn2 {
+    background: transparent url(../imgs/cal/btn2.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btn3 {
+    background: transparent url(../imgs/cal/btn3.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btnSum {
+    background: transparent url(../imgs/cal/btn+.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btnPorc{
+    background: transparent url(../imgs/cal/btnPorc.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btn0{
+    background: transparent url(../imgs/cal/btn0.png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btnPt{
+    background: transparent url(../imgs/cal/btn..png)no-repeat center;
+}
+
+section div.calc ul.buttons li#btnIgual{
+    background: transparent url(../imgs/cal/btn=.png)no-repeat center;
+}
